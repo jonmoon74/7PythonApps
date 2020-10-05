@@ -1,1 +1,1 @@
-The repository contains the code from the StackSkills course 7 python applications
+The repository contains codes I am working on as well as fully operational snippets that run alone at CLI or within larger works
