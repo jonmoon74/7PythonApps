@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 # Python program to convert hex to rgb
 
 hex = input("what is the hex code to convert?")
