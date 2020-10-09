@@ -4,10 +4,11 @@
 
 from math import floor
 
-rgb = input("What is the RGB code to convert (format as nn,nn,nn)")
-red = int(rgb[0] + rgb[1])
-green = int(rgb[3] + rgb[4])
-blue = int(rgb[6] + rgb[7])
+rgbSource = input("What is the RGB code to convert (format as nn,nn,nn)")
+rgb = rgbSource.split(",")
+red = int(rgb[0])
+green = int(rgb[1])
+blue = int(rgb[2])
 
 charOne = floor(red / 16)
 charTwo = red % 16
@@ -27,7 +28,7 @@ def numberToLetter(i):
     elif i == 13:
         i = "D"
     elif i == 14:
-        i == "E"
+        i = "E"
     elif i == 15:
         i = "F"
     else:
@@ -41,6 +42,5 @@ charThree = str(numberToLetter(charThree))
 charFour = str(numberToLetter(charFour))
 charFive = str(numberToLetter(charFive))
 charSix = str(numberToLetter(charSix))
-
 
 print("#" + charOne + charTwo + charThree + charFour + charFive + charSix)
